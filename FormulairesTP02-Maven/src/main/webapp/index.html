@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><title>Servlets : Traitement des formulaire</title>
+<meta charset="utf-8">
+<link rel="stylesheet"
+ href="css/styles.css"
+ type="text/css"/>
+</head>
+<body>
+<table class="title">
+ <tr><th> <img src="images/lune1.png" height="100"></th>
+ <th>Servlets : Traitement des Formulaires</th>
+ <th><img src="images/lune2.png" height="100" ></th>
+ </tr>
+</table>
+<p>
+Notes: Cette application ne tourne que sur un serveur d'application qui supporte les servlets 3.0.(Tomcat 7 ou 8, 
+Glassfish)</p>
+<fieldset>
+<legend>Formulaires faisant appel à des servlets utilisant GET ou POST</legend>
+<ul>
+ <li><a href="get-form.html">get-form.html</a> Formulaire qui envoie les paramètres à la servlet 
+TwoParamsGET.</li>
+ <li><a href="post-form.html">post-form.html</a> Formulaire qui envoie les paramètres à la servlet 
+TwoParamsPOST</li>
+ <li><a href="three-params-form.html">three-params-form.html</a> 
+ Formulaire qui envoie les paramètres à la servlet ThreeParams: Ne spécifie l'attribut Method(par défaut 
+Method="doGet").</li>
+</ul>
+</fieldset>
+<p/>
+<fieldset>
+<legend>Formulaires faisant appel à des servlets qui manipulent différents types de paramètres</legend>
+<ul>
+ <li><a href="show-parameters-get-form.html">show-parameters-get-form.html</a>
+ Formulaire qui utilise la méthode GET de la servlet ShowParameters pour accéder aux paramètres de la 
+requète.</li>
+ <li><a href="show-parameters-post-form.html">show-parameters-post-form.html</a> 
+ Formulaire qui utilise la méthode POST de la servlet ShowParameters pour accéder aux paramètres de la 
+requète.</li>
+</ul>
+</fieldset>
+<p/>
+<fieldset>
+<legend>Formulaires faisant appels à des servlets utilisant un filtre</legend>
+<ul> 
+ <li><a href="code-form-1.html">code-form-1.html</a> 
+
+ Formulaire qui envoie les données à la servlet CodePreviewBad. 
+ Echoue d'échaper aux caractères HTML.</li>
+ <li><a href="code-form-2.html">code-form-2.html</a> 
+ Formulaire qui envoie les données à la servlet CodePreviewGood .
+ Réussit d'échaper aux caractères HTML.</li>
+</ul>
+</fieldset>
+</body></html>

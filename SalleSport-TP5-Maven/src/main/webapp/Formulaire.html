@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Salle de sports [Toujours En Forme]</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <h1>Salle de sport [Toujours En Forme] : Inscription</h1>
+ <form method = "post" action = "inscrire">
+ <fieldset>
+ <legend>Identification</legend>
+ <table>
+ 
+ <tr>
+ <td>Nom:</td>
+ <td><input type="text" name="nom" /></td>
+ </tr>
+ <tr>
+ <td>Prénom:</td>
+ <td><input type="text" name="prenom" /></td>
+ </tr>
+ <tr>
+ <td>Adresse:</td>
+ <td><input type="text" name="adresse" size="50"/></td>
+ </tr>
+ <tr>
+ <td>Email:</td>
+ <td><input type="text" name="email" /></td>
+ </tr>
+ <tr>
+ <td>Tel:</td>
+
+ <td><input type="text" name="tel" /></td>
+ </tr>
+ <tr>
+ <td><input type="radio" name="genre" value="H">Homme</td>
+ <td><input type="radio" name="genre" value="F">Femme</td>
+ </tr>
+ </table>
+ </fieldset>
+ 
+ <fieldset>
+ <legend>Quels sports souhaitez vous pratiquer ?</legend>
+ <input type = "checkbox" name ="sport" value = "marche">Marche<br/>
+ <input type = "checkbox" name ="sport" value = "joggiing">Jogging<br/>
+ <input type = "checkbox" name ="sport" value = "foot">Foot<br/>
+ <input type = "checkbox" name ="sport" value = "tennis">Tennis<br/>
+ <input type = "checkbox" name ="sport" value = "natation">Natation<br/>
+ </fieldset>
+ <input type ="submit" value= "Envoyer">
+ </form>
+ </body>
+</html>

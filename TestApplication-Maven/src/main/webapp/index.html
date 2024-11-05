@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+
+<html>
+<head>
+<title>Application Web de test</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+</head>
+<body>
+<table class="title">
+<tr><th><img src="images/lune1.png" height="100"></th> 
+    <th>Application Web de test pour Tomcat 7 et plus</th> 
+    <th><img src= "images/lune2.png" height="100"></th>
+</tr>
+</table>
+<p/>
+<fieldset>
+<legend>Test de pages simples</legend>
+<ul>
+<li><a href="hello.html">hello.html</a> Page HTML simple.</li>
+<li><a href="hello.jsp">hello.jsp</a> Page JSP Simple.</li>
+</ul>
+</fieldset>
+<p/>
+<fieldset>
+<legend>Testing Simple Servlets</legend>
+<ul>
+<li><a href="hello">hello</a> HelloWorld servlet that generates simple text.</li>
+<li><a href="test1">test1</a> Servlet TestServlet which generates an HTML page accessible via a URL specified by the @WebServlet annotation which is in the java source code of the servlet.</li>
+<li><a href="test2">test2</a> Servlet TestServlet, but accessible via a 2nd URL specified in the file web.xml.</li>
+</fieldset>
+<p/>
+<fieldset>
+<legend>Test of Simple Servlets using a utility class:TestServlet WithUtilities uses the java class utility "ServletUtilities".</legend>
+<form method="GET" action="servlet-avec-utilities">
+Give an integer: <input type="text" name="paramint"><br/>
+Give a real: <input type="text" name="paramdouble"/><br/> 
+Give a string with characters (<> " &):<input type="text" name="paramstring"><br/>
+<input type="submit" value="Send"/>
+</form>
+</fieldset>
+</body>
+</html>

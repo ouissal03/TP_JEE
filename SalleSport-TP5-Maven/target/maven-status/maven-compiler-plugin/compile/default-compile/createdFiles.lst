@@ -1,0 +1,6 @@
+dao\Adherent.class
+dao\DBInscription.class
+servlets\ServletInscrire.class
+dao\Inscription.class
+dao\DBAdherent.class
+dao\DBUtil.class

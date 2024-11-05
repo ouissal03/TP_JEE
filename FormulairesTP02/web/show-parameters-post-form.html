@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Simple Form using GET</title>
+</head>
+<body>
+	<h1>A Simple Form using GET</h1>
+	<br/>
+	<br/>
+	<form action="ShowParameters" method="POST">
+		<table>
+			<tr>
+				<td><b>Item Number : </b></td><td><input type="text" name="itemNumber"></td>
+			</tr>
+			<tr>
+				<td><b>Description : </b></td><td><input type="text" name="description"></td>
+			</tr>
+			<tr>
+				<td><b>Price Each : </b></td><td><input type="text" name="priceEach"></td>
+			</tr>
+			<tr>
+				<td><b>First Name : </b></td><td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td><b>Last  Name : </b></td><td><input type="text" name="lastName"></td>
+			</tr>
+			<tr>
+				<td><b>Shipping Address : </b></td><td><textarea rows="5" cols="30" name="shippingAddress"></textarea></td>
+			</tr>
+			<tr>
+				<td><b>Credit Card : </b></td><td><input type="radio" name="creditCard" value="Visa" checked="checked">Visa<br/>
+												  <input type="radio" name="creditCard" value="MasterCard">MasterCard<br/>
+												  <input type="radio" name="creditCard" value="American Express">American Express<br/>
+												  <input type="radio" name="creditCard" value="Discover">Discover<br/>
+												  <input type="radio" name="creditCard" value="Java SmartCard">Java SmartCard</td>
+			</tr>
+			<tr>
+				<td><b>Credit Card Number : </b></td><td><input type="password" name="creditCardNumber"></td>
+			</tr>
+			<tr>
+				<td><b>Repeat Credit Card Number : </b></td><td><input type="password" name="repeatCreditCardNumber"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="submit" value="Envoyer"></td><td><input type="reset" value="Tout effacer"></td>
+			</tr>		
+		</table>
+	</form>
+</body>
+</html>

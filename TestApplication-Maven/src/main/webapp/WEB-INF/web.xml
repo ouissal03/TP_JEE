@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" xmlns="http://xmins.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmins.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+<servlet>
+
+<servlet-name>TestServletAvecUtilities</servlet-name>
+<servlet-class>MyServlets.TestServletAvecUtilities</servlet-class>
+</servlet>
+<servlet>
+<servlet-name>TestServlet2</servlet-name>
+<servlet-class>MyServlets.TestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>TestServletAvecUtilities</servlet-name> 
+<url-pattern>/servlet-avec-utilities</url-pattern>
+</servlet-mapping> 
+<servlet-mapping>
+<servlet-name>TestServlet2</servlet-name>
+<url-pattern>/test2</url-pattern>
+</servlet-mapping>
+<session-config>
+<session-timeout>
+30
+</session-timeout>
+</session-config> 
+</web-app>
